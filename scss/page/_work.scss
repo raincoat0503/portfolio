@@ -1,0 +1,33 @@
+.work{
+    width: 100%;
+    margin: 0 auto;
+    &_content{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &_item{
+        width: 30%;
+        margin: 30px 1.5%;
+        :hover{
+            color: red;
+        }
+        a{
+            display: block;
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+        }
+        img{
+            width: 100%;
+        }
+        h3{
+            @include bold(24px);
+            padding: 13px 0;
+        }
+        p{
+            @include light(14px);
+        }
+    }
+}

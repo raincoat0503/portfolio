@@ -1,0 +1,25 @@
+//base
+@import 'base/reset';
+@import 'base/base';
+
+//mixin
+@import 'mixin/media';
+@import 'mixin/color';
+@import 'mixin/font';
+@import 'mixin/button';
+@import 'mixin/link';
+
+//mocule
+@import 'module/header';
+@import 'module/footer';
+
+//page
+@import 'page/index';
+@import 'page/work';
+@import 'page/contact';
+
+//animetion{
+@import 'animation/anime-index';
+
+//setting
+@import 'setting/setting';

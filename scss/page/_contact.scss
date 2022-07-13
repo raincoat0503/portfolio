@@ -1,0 +1,38 @@
+.contact{
+    width: 100%;
+    &_box{
+        display: flex;
+        margin-top: 24px;
+        p{
+            padding: 13px 24px;
+        }
+    }
+    &_text{
+        width: 200px;
+    }
+    &_form{
+        background: none;
+        border: none;
+        border-bottom: solid 1px $black;
+        padding: 13px 0;
+        &-mail{
+            width: calc(80% - 200px);
+        }
+        &-fname{
+            width: calc(50% - 200px);
+        }
+        &-lname{
+            width: calc(50% - 200px);
+        }
+        &-form{
+            width: calc(100% - 200px);
+            height: 200px;
+            max-height:200px;
+            min-height: 200px;
+        }
+        &-submit{
+            @include button();
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+$footer-height:100px;
+
+.footer {
+    margin: 100px auto 0 auto;
+    width: 100%;
+    height: $footer-height;
+    &_logo {
+        margin-top: 20px;
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+    }
+    &_nav{
+        margin-top: 10px;
+    }
+    &_list {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    &_item {
+        padding: 10px 0;
+        margin: 0 10px;
+        &:last-child {
+            margin-right: 0;
+            padding-right: 0;
+            .footer_link{
+                padding-right: 0;
+            }
+        }
+    }
+    &_link {
+        @include reguler(16px);
+        letter-spacing: 0.1em;
+        padding: 10px;
+        color: #000;
+        @include link-hover;
+    }
+    &_copyright {
+        border-top: 1px #000 solid;
+        @include light(14px);
+        letter-spacing: 0.1em;
+        padding: 10px 0 10px 0;
+    }
+}

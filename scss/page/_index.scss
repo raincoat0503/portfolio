@@ -1,0 +1,113 @@
+.hero {
+    position: relative;
+    height: 75vh;
+    margin-top: 50px;
+    &_image {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        object-fit: cover;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        filter: blur(2px) brightness(90%);
+        margin: -2px;
+    }
+    &_content{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    &_text {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10%;
+        color: $white;
+        h1 {
+            letter-spacing: 0.3rem;
+        }
+        h2 {
+            margin-top: 6px;
+            letter-spacing: 0.5rem;
+        }
+        p {
+            margin-top: 24px;
+        }
+        a {
+            margin-top: 32px;
+        }
+    }
+    &_animebox{
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        width: 60%;
+        height: 100%;
+    }
+    &_animation{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+    &_textarea {
+        width: 45%;
+        p {
+            margin-top: 24px;
+        }
+    }
+    &_image {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    &_link {
+        margin-top: 42px;
+    }
+}
+
+.contact {
+    margin-top: 80px;
+    &_address {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+    &_mail {
+        h2{
+            letter-spacing: 0.2rem;
+        }
+    }
+    &_media {
+        display: flex;
+    }
+    &_link {
+        padding: 10px 16px;
+        margin: 0 20px;
+        transition: 0.2s;
+        &-hover {
+            @include link-hover;
+        }
+    }
+    &_item {
+        font-size: 24px;
+        color: $black;
+    }
+}

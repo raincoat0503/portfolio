@@ -1,0 +1,988 @@
+* {
+  font-family: "bilo";
+}
+
+ul, li {
+  list-style: none;
+}
+
+/*! sanitize.css v7.0.3 | CC0 License | github.com/csstools/sanitize.css */
+/* Document
+ * ========================================================================== */
+/**
+ * 1. Remove repeating backgrounds in all browsers (opinionated).
+ * 2. Add border box sizing in all browsers (opinionated).
+ */
+*,
+::before,
+::after {
+  background-repeat: no-repeat; /* 1 */
+  box-sizing: border-box; /* 2 */
+}
+
+/**
+ * 1. Add text decoration inheritance in all browsers (opinionated).
+ * 2. Add vertical alignment inheritance in all browsers (opinionated).
+ */
+::before,
+::after {
+  text-decoration: inherit; /* 1 */
+  vertical-align: inherit; /* 2 */
+}
+
+/**
+ * 1. Use the default cursor in all browsers (opinionated).
+ * 2. Use the default user interface font in all browsers (opinionated).
+ * 3. Correct the line height in all browsers.
+ * 4. Use a 4-space tab width in all browsers (opinionated).
+ * 5. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ * 6. Breaks words to prevent overflow in all browsers (opinionated).
+ */
+html {
+  cursor: default; /* 1 */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Oxygen, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 2 */
+  line-height: 1.15; /* 3 */
+  -moz-tab-size: 4; /* 4 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 4 */
+  -ms-text-size-adjust: 100%; /* 5 */
+  -webkit-text-size-adjust: 100%; /* 5 */
+  word-break: break-word; /* 6 */
+}
+
+/* Sections
+ * ========================================================================== */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * 1. Add the correct sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * Add the correct display in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Remove the list style on navigation lists in all browsers (opinionated).
+ */
+nav ol,
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Use the default monospace user interface font
+ *    in all browsers (opinionated).
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono, Liberation Mono, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Add the correct text decoration in Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Use the default monospace user interface font
+ *    in all browsers (opinionated).
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono, Liberation Mono, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Remove the text shadow on text selections in Firefox 61- (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow
+ *    in all browsers (opinionated).
+ */
+::-moz-selection {
+  background-color: #b3d4fc; /* 1 */
+  color: #000; /* 1 */
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc; /* 1 */
+  color: #000; /* 1 */
+  text-shadow: none;
+}
+
+/* Embedded content
+ * ========================================================================== */
+/*
+ * Change the alignment on media elements in all browers (opinionated).
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+svg {
+  fill: currentColor;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tabular data
+ * ========================================================================== */
+/**
+ * Collapse border spacing in all browsers (opinionated).
+ */
+table {
+  border-collapse: collapse;
+}
+
+/* Forms
+ * ========================================================================== */
+/**
+ * Inherit styling in all browsers (opinionated).
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/**
+ * Remove the margin in Safari.
+ */
+button,
+input,
+select {
+  margin: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+/**
+ * 1. Show the overflow in IE.
+ * 2. Remove the inheritance of text transform in Edge, Firefox, and IE.
+ */
+button {
+  overflow: visible; /* 1 */
+  text-transform: none; /* 2 */
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * Show the overflow in Edge and IE.
+ */
+input {
+  overflow: visible;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ */
+legend {
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in Edge and IE.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Remove the margin in Firefox and Safari.
+ * 2. Remove the default vertical scrollbar in IE.
+ * 3. Change the resize direction on textareas in all browsers (opinionated).
+ */
+textarea {
+  margin: 0; /* 1 */
+  overflow: auto; /* 2 */
+  resize: vertical; /* 3 */
+}
+
+/**
+ * Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  padding: 0;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding of focus outlines in Firefox.
+ */
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus outline styles unset by the previous rule in Firefox.
+ */
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* Interactive
+ * ========================================================================== */
+/*
+ * Add the correct display in Edge and IE.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct styles in Edge, IE, and Safari.
+ */
+dialog {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: block;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* User interaction
+ * ========================================================================== */
+/*
+ * 1. Remove the tapping delay on clickable elements
+      in all browsers (opinionated).
+ * 2. Remove the tapping delay in IE 10.
+ */
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] { /* 1 */
+  touch-action: manipulation; /* 2 */
+}
+
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Accessibility
+ * ========================================================================== */
+/**
+ * Change the cursor on busy elements in all browsers (opinionated).
+ */
+[aria-busy=true] {
+  cursor: progress;
+}
+
+/*
+ * Change the cursor on control elements in all browsers (opinionated).
+ */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements in all browsers (opinionated).
+ */
+[aria-disabled],
+[disabled] {
+  cursor: not-allowed;
+}
+
+/*
+ * Change the display on visually hidden accessible elements
+ * in all browsers (opinionated).
+ */
+[aria-hidden=false][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  display: inherit;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 70%;
+  max-width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
+  background: #efefef;
+}
+
+@font-face {
+  font-family: "jp-bold";
+  src: url(../../media/font/jp-bold.otf) format("opentype");
+  src: url(../../media/font/jp-bold.woff) format("woff");
+}
+@font-face {
+  font-family: "jp-reguler";
+  src: url(../../media/font/jp-reguler.otf) format("opentype");
+  src: url(../../media/font/jp-reguler.woff) format("woff");
+}
+@font-face {
+  font-family: "jp-light";
+  src: url(../../media/font/jp-light.otf) format("opentype");
+  src: url(../../media/font/jp-light.woff) format("woff");
+}
+.en {
+  font-family: "bilo", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02rem;
+  line-height: 1.5rem;
+}
+
+.jp {
+  font-family: "jp-reguler", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02rem;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-family: "bilo", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-family: "bilo", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  letter-spacing: 0.06em;
+}
+
+.btn-white {
+  display: inline-block;
+  padding: 13px 24px;
+  background: none;
+  border: solid 1px #efefef;
+  transition: 150ms;
+  font-family: "bilo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: #efefef;
+}
+.btn-white:hover {
+  transition: 200ms;
+  background: #efefef;
+  border: solid 1px rgba(0, 0, 0, 0);
+  outline-offset: -1px;
+  color: #212121;
+}
+
+.btn-black {
+  display: inline-block;
+  padding: 13px 24px;
+  background: none;
+  border: solid 1px #212121;
+  transition: 150ms;
+  font-family: "bilo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: #212121;
+}
+.btn-black:hover {
+  transition: 200ms;
+  background: #212121;
+  border: solid 1px rgba(0, 0, 0, 0);
+  outline-offset: -1px;
+  color: #efefef;
+}
+
+.header {
+  margin: 30px auto 0 auto;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header_list {
+  display: flex;
+  align-items: center;
+}
+.header_item {
+  height: 100%;
+}
+.header_item:last-child .header_link {
+  margin-right: 0;
+}
+.header_link {
+  font-family: "bilo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 0 10px;
+  letter-spacing: 0.2em;
+  color: #212121;
+  display: block;
+}
+.header_link-underline {
+  display: inline-block;
+  position: relative;
+  color: #212121;
+  transition: 200ms;
+}
+.header_link-underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #212121;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.header_link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.header_link-btn {
+  letter-spacing: 0.1em;
+  color: #212121;
+  padding: 13px 24px;
+}
+
+.footer {
+  margin: 100px auto 0 auto;
+  width: 100%;
+  height: 100px;
+}
+.footer_logo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+.footer_nav {
+  margin-top: 10px;
+}
+.footer_list {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.footer_item {
+  padding: 10px 0;
+  margin: 0 10px;
+}
+.footer_item:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+.footer_item:last-child .footer_link {
+  padding-right: 0;
+}
+.footer_link {
+  font-family: "bilo", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  padding: 10px;
+  color: #000;
+  display: inline-block;
+  position: relative;
+  color: #212121;
+  transition: 200ms;
+}
+.footer_link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #212121;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.footer_link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.footer_copyright {
+  border-top: 1px #000 solid;
+  font-family: "bilo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  padding: 10px 0 10px 0;
+}
+
+.hero {
+  position: relative;
+  height: 75vh;
+  margin-top: 50px;
+}
+.hero_image {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.hero img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(2px) brightness(90%);
+  margin: -2px;
+}
+.hero_content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.hero_text {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  color: #efefef;
+}
+.hero_text h1 {
+  letter-spacing: 0.3rem;
+}
+.hero_text h2 {
+  margin-top: 6px;
+  letter-spacing: 0.5rem;
+}
+.hero_text p {
+  margin-top: 24px;
+}
+.hero_text a {
+  margin-top: 32px;
+}
+.hero_animebox {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  width: 60%;
+  height: 100%;
+}
+.hero_animation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 80px;
+}
+.about_textarea {
+  width: 45%;
+}
+.about_textarea p {
+  margin-top: 24px;
+}
+.about_image {
+  width: 50%;
+}
+.about_image img {
+  width: 100%;
+}
+.about_link {
+  margin-top: 42px;
+}
+
+.contact {
+  margin-top: 80px;
+}
+.contact_address {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.contact_mail h2 {
+  letter-spacing: 0.2rem;
+}
+.contact_media {
+  display: flex;
+}
+.contact_link {
+  padding: 10px 16px;
+  margin: 0 20px;
+  transition: 0.2s;
+}
+.contact_link-hover {
+  display: inline-block;
+  position: relative;
+  color: #212121;
+  transition: 200ms;
+}
+.contact_link-hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #212121;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.contact_link-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.contact_item {
+  font-size: 24px;
+  color: #212121;
+}
+
+.work {
+  width: 100%;
+  margin: 0 auto;
+}
+.work_content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.work_item {
+  width: 30%;
+  margin: 30px 1.5%;
+}
+.work_item :hover {
+  color: red;
+}
+.work_item a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.work_item img {
+  width: 100%;
+}
+.work_item h3 {
+  font-family: "bilo", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 13px 0;
+}
+.work_item p {
+  font-family: "bilo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.contact {
+  width: 100%;
+}
+.contact_box {
+  display: flex;
+  margin-top: 24px;
+}
+.contact_box p {
+  padding: 13px 24px;
+}
+.contact_text {
+  width: 200px;
+}
+.contact_form {
+  background: none;
+  border: none;
+  border-bottom: solid 1px #212121;
+  padding: 13px 0;
+}
+.contact_form-mail {
+  width: calc(80% - 200px);
+}
+.contact_form-fname {
+  width: calc(50% - 200px);
+}
+.contact_form-lname {
+  width: calc(50% - 200px);
+}
+.contact_form-form {
+  width: calc(100% - 200px);
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+}
+.contact_form-submit {
+  display: inline-block;
+  padding: 13px 24px;
+  background: none;
+  border: solid 1px #212121;
+  transition: 150ms;
+  font-family: "bilo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+.contact_form-submit:hover {
+  transition: 200ms;
+  background: #212121;
+  border: solid 1px rgba(0, 0, 0, 0);
+  outline-offset: -1px;
+  color: #efefef;
+}
+
+@media screen and (max-width: 960px) {
+  .anime {
+    display: none;
+  }
+}
+.anime-item {
+  position: absolute;
+}
+.anime-hero_line-01 {
+  width: 2px;
+  height: 0%;
+  background: #efefef;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}/*# sourceMappingURL=style.css.map */
