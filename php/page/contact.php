@@ -1,10 +1,8 @@
-<?php include('../../php/base/link.php') ?>
-
 <?php include('../../php/module/header.php') ?>
 
 <h2 class="jp" style="margin-top: 50px; font-size:34px;">ただいま改装中、送信しても何も起きません。</h2>
 
-<form action="" class="contact">
+<form action="../module/check.php" method="POST" class="contact">
     <div class="contact_box">
         <div class="contact_text">
             <p>Mail address</p>
@@ -37,4 +35,3 @@
 </form>
 
 <?php include('../../php/module/footer.php') ?>
-<?php include('../../php/base/script.php') ?>
