@@ -9,7 +9,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="http://makinokaito.main.jp/makinokaito.com/media/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="http://makinokaito.main.jp/makinokaito.com/media/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="http://makinokaito.main.jp/makinokaito.com/media/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="http://makinokaito.main.jp/makinokaito.com/media/img/favicon/site.webmanifest">
     <link rel="mask-icon" href="http://makinokaito.main.jp/makinokaito.com/media/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">

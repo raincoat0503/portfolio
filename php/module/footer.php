@@ -21,5 +21,6 @@
 
 <script src="/src/index.js"></script>
 <script src="/src/animation/animetion.js"></script>
+<script src="/src/module/mail.js"></script>
 
 </body>
