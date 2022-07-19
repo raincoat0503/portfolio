@@ -531,34 +531,19 @@ body {
   max-width: 1200px;
   min-width: 900px;
   margin: 0 auto;
+}
+
+body {
   background: #efefef;
 }
 
-@font-face {
-  font-family: "jp-bold";
-  src: url(../../media/font/jp-bold.otf) format("opentype");
-  src: url(../../media/font/jp-bold.woff) format("woff");
+p, h1, h2, h3, h4, h5, h6, a, input, textarea {
+  color: #212121;
 }
-@font-face {
-  font-family: "jp-reguler";
-  src: url(../../media/font/jp-reguler.otf) format("opentype");
-  src: url(../../media/font/jp-reguler.woff) format("woff");
-}
-@font-face {
-  font-family: "jp-light";
-  src: url(../../media/font/jp-light.otf) format("opentype");
-  src: url(../../media/font/jp-light.woff) format("woff");
-}
+
 .en {
   font-family: "bilo", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.02rem;
-  line-height: 1.5rem;
-}
-
-.jp {
-  font-family: "jp-reguler", sans-serif;
   font-size: 16px;
   letter-spacing: 0.02rem;
   line-height: 1.5rem;
@@ -923,7 +908,7 @@ h2 {
   display: flex;
   margin-top: 24px;
 }
-.contact_box p {
+.contact_head {
   padding: 13px 24px;
 }
 .contact_text {
@@ -968,6 +953,21 @@ h2 {
   border: solid 1px rgba(0, 0, 0, 0);
   outline-offset: -1px;
   color: #efefef;
+}
+.contact_btn {
+  margin-top: 40px;
+  margin-left: 24px;
+}
+.contact_btn:nth-child(2) {
+  margin-left: 0;
+}
+.contact_checkbox {
+  margin-top: 80px;
+}
+.contact_check {
+  width: calc(100% - 200px);
+  border-bottom: solid 1px #212121;
+  padding: 13px 0;
 }
 
 @media screen and (max-width: 960px) {

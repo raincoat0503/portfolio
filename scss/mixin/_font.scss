@@ -14,45 +14,10 @@
     font-size: $fontsize;
 }
 
-@font-face {
-    font-family: 'jp-bold';
-    src: url(../../media/font/jp-bold.otf) format("opentype");
-    src: url(../../media/font/jp-bold.woff) format("woff");
-}
-@mixin jp-bold($fontsize) {
-    font-family: 'jp-bold',sans-serif;
-    font-size: $fontsize;
-}
-
-@font-face {
-    font-family: 'jp-reguler';
-    src: url(../../media/font/jp-reguler.otf) format("opentype");
-    src: url(../../media/font/jp-reguler.woff) format("woff");
-}
-@mixin jp-reguler($fontsize) {
-    font-family: 'jp-reguler',sans-serif;
-    font-size: $fontsize;
-}
-
-@font-face {
-    font-family: 'jp-light';
-    src: url(../../media/font/jp-light.otf) format("opentype");
-    src: url(../../media/font/jp-light.woff) format("woff");
-}
-@mixin jp-light($fontsize) {
-    font-family: 'jp-light',sans-serif;
-    font-size: $fontsize;
-}
-
 .en{
     @include reguler(16px);
     letter-spacing: 0.02rem;
     line-height: 1.5rem;
-}
-.jp{
-    @include jp-reguler(16px);
-    letter-spacing: 0.02rem;
-    line-height: 1.5rem
 }
 
 h1{

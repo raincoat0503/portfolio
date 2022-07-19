@@ -3,9 +3,9 @@
     &_box{
         display: flex;
         margin-top: 24px;
-        p{
-            padding: 13px 24px;
-        }
+    }
+    &_head{
+        padding: 13px 24px;
     }
     &_text{
         width: 200px;
@@ -34,5 +34,20 @@
             @include button();
             cursor: pointer;
         }
+    }
+    &_btn{
+        margin-top: 40px;
+        margin-left: 24px;
+        &:nth-child(2){
+            margin-left: 0;
+        }
+    }
+    &_checkbox{
+        margin-top: 80px;
+    }
+    &_check{
+        width: calc(100% - 200px);
+        border-bottom: solid 1px $black;
+        padding: 13px 0;
     }
 }
